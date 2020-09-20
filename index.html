@@ -6,24 +6,26 @@
   <meta name="description" content="This website is Vicky Chen's personal website which includes her recent software development projects and her contact information.">
   <title>Vicky's Personal Website</title>
   <link rel="icon" href="image/dogIcon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!--if the link starts with / that means it is pointing to the root of
+  your website. but href="css/styles.css" means css folder is in the same
+  level of folder with our current file.-->
+  <!--
   <style media="screen">
-    body {background-color: #E0EBE8;}
-    hr {background-color: inherit;
-        border-style: none;
-        border-top-style: dotted;
-        border-color: lightgray;
-        border-width: 5px;
-        width: 5%;
-        }
-  </style> <!-- inside our style code, we always write stuff inside our {} and change things in the front, like body.-->
+    originall what goes into that CSS file should go here.
+  </style> -->
+  <!-- inside our style code, we always write stuff inside our {} and change things in the front, like body.-->
+
 </head>
 
-<body> <!-- since our body represent the whole thing if we change the color of the background here, the whole webpage's color will change. -->
+<body>
+  <!-- since our body represent the whole thing if we change the color of the background here, the whole webpage's color will change. -->
   <table cellspacing="15">
     <tr>
-      <td> <img style="width:70%" src="image/myface.png" alt="Vicky Yujing Chen's Profile Picture"></td>
+      <td> <img class="myFace" style="width:70%" src="image/myface.png" alt="Vicky Yujing Chen's Profile Picture"></td>
       <td>
-        <h1>Vicky Chen</h1>
+        <h1 id="heading">Vicky Chen</h1>
         <p><em> Master of Science in Computer Science Student @<strong><a href="https://engineering.nyu.edu/academics/programs/computer-science-ms" target="_blank">NYU Tandon
                 School of Engineering</a></strong></em></p>
         <p>I am a learner by heart. I began my career as a Technical
@@ -76,7 +78,7 @@
   </table>
 
   <br>
-  <hr size="2" noshade> <br>
+  <hr size="2" noshade>
 
   <h3>Skills</h3>
   <table cellspacing="5">
@@ -110,8 +112,8 @@
       </td>
     </tr>
 
-  </table>  <br>
-  <hr size="2" noshade> <br>
+  </table> <br>
+  <hr size="2" noshade>
   <h3><a href="hobbies.html" target="_blank">Hobbies</a></h3>
   <h3><a href="Contact.html" target="_blank">Contact Me</a></h3>
 </body>
